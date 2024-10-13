@@ -1,0 +1,77 @@
+.contenedor{
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    border-radius: 25px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "header header"
+                         "nav nav "
+                         " contenido ads"
+                         " footer footer"     ;
+}
+
+.contenedor .header
+{
+    padding: 5px;
+    grid-area: header;
+    background-color: rgb(5, 119, 123);
+}
+.contenedor .nav
+{
+    grid-area: nav;
+    background-color: rgb(255, 255, 255);
+}
+.contenedor .contenido
+{
+    grid-area: contenido;
+    background-color:rgb(200, 245, 242);
+    text-align: center;
+}
+.contenedor .ads
+{
+    grid-area: ads;
+    background-color: rgb(175, 242, 245);
+}
+.contenedor .footer
+{
+    grid-area: footer;
+    background-color: rgb(183, 236, 236);
+}
+.carousel-item {
+    height: 100%; /* Ajusta este valor según el tamaño que necesites */
+}
+
+.carousel-item img {
+    object-fit: contain; /* Asegura que la imagen cubra el contenedor */
+    height: 700px;      /* Asegúrate de que la imagen ocupe todo el alto del contenedor */
+    width: 100%;       /* Asegúrate de que la imagen ocupe todo el ancho del contenedor */
+}
+.carousel {
+    max-width: 100%;
+    overflow: unset; /* Esconde cualquier contenido que exceda el ancho */
+}
+.card-body{
+    background-color: rgb(211, 255, 255);
+}
+/* Cambiar el color de fondo del menú */
+.navbar {
+    background-color: rgb(94, 215, 255); /* Cambia este valor por el color que prefieras */
+}
+
+/* Cambiar el color de los enlaces del menú */
+.navbar .navbar-expand-lg {
+    background-color: rgb(255, 255, 255); /* Cambia este valor por el color que prefieras */
+}
+
+/* Cambiar el color del enlace activo */
+.navbar-nav .nav-link.active {
+    background-color: lightblue; /* Cambia este valor por el color que prefieras */
+}
+.container-fluid{
+    background-color: lightblue;
+}
+
+
+
+
